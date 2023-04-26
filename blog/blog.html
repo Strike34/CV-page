@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="resetport.css">
+<link rel="stylesheet" href="portfolio.css">
+<script src="main.js"></script>
+</head>
+<body>
+<header>
+<nav>
+    <h1 class="title"><span>My</span>Portfolio</h1>
+    <ul>
+        <li><a href="miniproject.html">About</a></li>
+		<li><a href="exp.html">Skills</a></li>
+		<li><a href="exp.html">Experience</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Login</a></li>
+        <li><a href="post.php">Post</a></li>
+    </ul>
+</nav>
+</header>
+
+<form method = "POST" action="login.php" name="f1">
+
+    <h7 class="contp">Enter your details</h7>
+    <div class="formbg"> 
+<div class="container">
+    <div class="user">
+  
+    <label for="uname"><p>Username</p></label>
+    <input type="text" placeholder="Enter Username" id="user" name="user" required onkeyup="if (/[^|a-z0-9]+/g.test(this.value)) this.value = this.value.replace(/[^|a-z0-9]+/g,'')">
+</div>
+<div class="password">
+    <label for="psw"><p>Password</p></label>
+    <input type="password" placeholder="Enter Password" id="pass" name="pass" required>
+    <br>
+  </div>
+  <div class="login">
+    <input type="submit" id="btn" value="Login"/>
+    
+</div>
+  </div>
+</div> 
+
+</form>
+</body>
